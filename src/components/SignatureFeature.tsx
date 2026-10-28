@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Flame, Clock } from 'lucide-react';
+import { IMAGE_ASSETS } from '../data/restaurantData';
 
 interface SignatureFeatureProps {
   onExplore: () => void;
@@ -66,7 +67,7 @@ export const SignatureFeature: React.FC<SignatureFeatureProps> = ({ onExplore })
           <div className="lg:col-span-7">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-[#23523d] aspect-[16/9] lg:aspect-[16/10] bg-[#122e22]">
               <img
-                src="/src/assets/images/signature_crispy_potstickers_1793174822226.jpg"
+                src={IMAGE_ASSETS.signature}
                 alt="Close-up of golden crispy pan-fried potstickers with toasted sesame seeds and fresh chives"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 ease-out"
                 loading="lazy"

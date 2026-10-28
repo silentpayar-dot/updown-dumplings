@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, ArrowDown, Utensils, Users, MapPin } from 'lucide-react';
-import { RESTAURANT_INFO } from '../data/restaurantData';
+import { RESTAURANT_INFO, IMAGE_ASSETS } from '../data/restaurantData';
 
 interface HeroSectionProps {
   onOpenOrderModal: () => void;
@@ -99,7 +99,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenOrderModal }) =>
               {/* Main Photo Container */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-[#FFFDF8] aspect-[4/3] bg-[#E8EDE3]">
                 <img
-                  src="/src/assets/images/hero_dumplings_spread_1793174820342.jpg"
+                  src={IMAGE_ASSETS.hero}
                   alt="Artisanal steamed and pan-fried dumplings arranged on dark ceramic tableware with chili dipping sauce"
                   className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
                   loading="eager"

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sparkles, HeartHandshake, Compass, ArrowRight } from 'lucide-react';
-import { RESTAURANT_INFO } from '../data/restaurantData';
+import { RESTAURANT_INFO, IMAGE_ASSETS } from '../data/restaurantData';
 
 export const AboutSection: React.FC = () => {
   const scrollToMenu = (e: React.MouseEvent) => {
@@ -21,7 +21,7 @@ export const AboutSection: React.FC = () => {
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="rounded-2xl overflow-hidden shadow-xl border-4 border-[#FFFDF8] aspect-[4/3] bg-[#E8EDE3]">
                 <img
-                  src="/src/assets/images/about_steamed_dimsum_1793174820994.jpg"
+                  src={IMAGE_ASSETS.about}
                   alt="Delicate traditional bamboo steamer basket filled with steaming soup dumplings xiao long bao"
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 ease-out"
                   loading="lazy"

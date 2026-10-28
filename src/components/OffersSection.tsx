@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, UtensilsCrossed } from 'lucide-react';
+import { IMAGE_ASSETS } from '../data/restaurantData';
 
 interface OffersSectionProps {
   onExplore: () => void;
@@ -47,7 +48,7 @@ export const OffersSection: React.FC<OffersSectionProps> = ({ onExplore }) => {
             {/* Right Photo */}
             <div className="md:col-span-5 h-64 md:h-full min-h-[280px] relative bg-[#122e22]">
               <img
-                src="/src/assets/images/dish_dan_dan_noodles_1793174822460.jpg"
+                src={IMAGE_ASSETS.danDanNoodles}
                 alt="Artisanal Dan Dan noodles with savory minced meat, tender baby bok choy and chili flakes"
                 className="w-full h-full object-cover"
                 loading="lazy"
